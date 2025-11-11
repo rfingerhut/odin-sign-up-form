@@ -7,35 +7,61 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="imagecontainer">
-        <div class="titleWrapper">
-            <img src="assets/halie-west-25xggax4bSA-unsplash.jpg" alt="Odin logo">
-            <h1 class="title">Odin</h1>
+    <div class="imageContainer">
+        <div class="titleContainer">
+            <div class="titleWrapper">
+                <img src="assets/odin-lined.png" alt="Odin logo">
+                <h1 class="title">Odin</h1>
+            </div>
         </div>
-        <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Hallie West</a> on <a href="https://unsplash.com">Unsplash</a></p>
+        <div class="textWrapper">
+            <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Hallie West</a> on <a href="https://unsplash.com">Unsplash</a></p>
+        </div>
     </div>
-    <div class="text-container">
-        <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</h2>
-        <h2>You <i>know</i> you want to.</h2>
-    </div>
-    <form action="">
-        <h2>Let's do this!</h2>
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name" name="user-first-name">
-        <label for="last-name">Last Name</label>
-        <input type="text" id="last-name" name="user-last-name">
-        <label for="email">Email</label>
-        <input type="email" name="user-email" id="email">
-        <label for="phone-number">Phone Number</label>
-        <input type="tel" name="user-phone-number" id="phone-number">
-        <label for="password">Password</label>
-        <input type="password" name="user-password" id="password">
-        <label for="confirm-password">Confirm Password</label>
-        <input type="password" name="user-confirm-password" id="confirm-password">
-    </form>
-    <div class="buttonWrapper">
-        <button type="submit">Create Account</button>
-        <p>Already have an account? <a href="http://">Log in</a></p>
+    <div class="formContainer">
+        <div class="text-container">
+            <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</h2>
+            <h2>You <i>know</i> you want to.</h2>
+        </div>
+        <div class="formWrapper">
+            <h2>Let's do this!</h2>
+            <form action="">
+                <div class="row">
+                    <div class="cell">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="user-first-name" required>
+                    </div>
+                    <div class="cell">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="user-last-name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <label for="email">Email</label>
+                        <input type="email" name="user-email" id="email" placeholder="user@mail.com" required>
+                    </div>
+                    <div class="cell">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" name="user-phone-number" id="phone-number" placeholder="555-555-5555" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <label for="password">Password</label>
+                        <input type="password" name="user-password" id="password" class="password" placeholder="">
+                    </div>
+                    <div class="cell">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="user-confirm-password" id="confirm-password" class="password" placeholder="">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="buttonWrapper">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="http://">Log in</a></p>
+        </div>
     </div>
 </body>
 </html>
